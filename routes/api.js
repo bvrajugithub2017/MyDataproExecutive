@@ -58,7 +58,7 @@ router.get('/executives', function(req, res){
 
 //to add a new employee Document in the MongoDB database
 router.post('/executives', function(req, res){
-  console.log(req.body);
+  //console.log(req.body);
    var emp = new Employee({
      ename : req.body.employeeName,
      email : req.body.employeeEmail,
@@ -81,7 +81,7 @@ router.post('/executives', function(req, res){
 });
 
 router.post('/mylocation', function(req, res){
-  console.log(req.body);
+  //console.log(req.body);
 
    var location = new Location({
      email : req.body.employeeEmail,
@@ -142,7 +142,7 @@ router.post('/myuploadedpic', function(req, res){
        // });
 
        //Saving the picture details in the MongoDB Database
-       console.log(req.body);
+       //console.log(req.body);
 
         var uploadedPic = new UploadedPic({
           email : req.body.email,
@@ -187,7 +187,7 @@ router.post('/myuploadeddoc', function(req, res){
         //   });
           //Saving the document data in the MongoDB Database
 
-          console.log(req.body);
+          //console.log(req.body);
 
            var uploadedDoc = new UploadedDoc({
              email : req.body.email,
