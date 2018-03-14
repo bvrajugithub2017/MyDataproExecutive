@@ -203,7 +203,7 @@ router.post('/myuploadeddoc', function(req, res){
                res.json({"serverdocresult" : "failed in saving doc"});
              }else{
                console.log('File details saved in the Database Successfully!');
-               res.json({"serverdocresult" : "successful in saving doc"});
+               res.json({"serverdocresult" : "Doc saved in the Database Successfully!"});
                }
           });
 });  //end of route

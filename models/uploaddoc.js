@@ -10,7 +10,7 @@ const employeeUploadDocSchema = new SchemaDoc({
     type : String
   },
 
-  filename: {
+  finalfilename: {
     type: String
   },
 
